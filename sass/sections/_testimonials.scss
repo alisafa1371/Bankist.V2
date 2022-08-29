@@ -1,0 +1,17 @@
+.testimonials {
+  padding: 18rem 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  transition: all 0.8s;
+
+  &__wrapper {
+    @include response(small-phone) {
+      max-width: 100%;
+      padding: 0 3rem;
+    }
+  }
+  &__header {
+    @include response(small-phone) {
+      width: 100%;
+    }
+  }
+}

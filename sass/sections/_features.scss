@@ -1,0 +1,54 @@
+.features {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  padding: 18rem 0;
+  transition: all 0.8s;
+
+  &__wrapper {
+    @include response(small-phone) {
+      justify-content: center;
+    }
+  }
+  &__header {
+    grid-column: 1/-1;
+    @include response(small-phone) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.4s;
+
+    @include response(laptop) {
+      width: 75%;
+      justify-self: center;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    align-items: flex-start;
+    align-self: center;
+    justify-self: center;
+    & p {
+      font-size: 1.8rem;
+    }
+    &--2 {
+      @include response(laptop) {
+        grid-row: 5/6;
+      }
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: $color-primary-opacity;
+    border-radius: 50%;
+    & svg {
+      fill: $color-primary-darker;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

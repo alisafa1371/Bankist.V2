@@ -1,0 +1,34 @@
+.hero {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  padding: 9rem 0 18rem;
+
+  &__wrapper {
+    height: 100%;
+    @include response(small-phone) {
+      justify-content: center;
+    }
+  }
+  &__text {
+    align-items: flex-start;
+    @include response(small-phone) {
+      align-items: center;
+      text-align: center;
+    }
+    & a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  &__img img {
+    max-width: 50rem;
+    @include response(small-phone) {
+      max-width: 33rem;
+    }
+  }
+  // goes up 9rem equals to header height to prevent page jumping after sticky nav
+  &.jump-up {
+    padding: 18rem 0;
+  }
+}

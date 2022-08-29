@@ -1,0 +1,38 @@
+.footer {
+  padding: 10rem 3rem;
+  background-color: #37383d;
+
+  &__nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: #eee;
+    text-decoration: none;
+  }
+
+  &__logo {
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      transform: rotateZ(-270deg);
+    }
+  }
+  &__copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    text-align: center;
+    & a {
+      font-size: 1.4rem;
+    }
+  }
+}

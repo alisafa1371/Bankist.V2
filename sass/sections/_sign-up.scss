@@ -1,0 +1,19 @@
+.sign-up {
+  background-color: #37383d;
+  border-top: none;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  padding: 10rem 3rem;
+  transition: all 0.8s;
+
+  &__wrapper {
+    max-width: 65%;
+    @include response(small-phone) {
+      max-width: 100%;
+    }
+  }
+  &__header {
+    color: #fff;
+    margin-bottom: 6rem;
+  }
+}

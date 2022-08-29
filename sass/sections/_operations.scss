@@ -1,0 +1,88 @@
+.operations {
+  padding: 18rem 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  transition: all 0.8s;
+
+  &__box {
+    display: none;
+    grid-template-columns: 1fr 5fr;
+    column-gap: $medium-gap;
+    row-gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    padding: 7rem 5rem;
+    & p {
+      grid-column: 2/-1;
+      font-size: 1.4rem;
+      @include response(small-phone) {
+        overflow: hidden;
+      }
+    }
+    @include response(small-phone) {
+      grid-template-rows: auto 11rem auto;
+      padding: 1rem;
+      align-content: start;
+    }
+
+    &.more {
+      @include response(small-phone) {
+        grid-template-rows: auto;
+      }
+    }
+    &--active {
+      display: grid;
+    }
+  }
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    background-color: $color-secondary-opacity;
+    border-radius: 50%;
+    justify-self: center;
+    & svg {
+      width: 3rem;
+      height: 3rem;
+      fill: $color-secondary-darker;
+    }
+  }
+
+  &__tab {
+    margin-top: 7rem;
+    width: 80%;
+    background-color: #fff;
+  }
+  &__btn-box {
+    gap: $medium-gap;
+    transform: translateY(-2rem);
+    @include response(small-phone) {
+      gap: 0;
+    }
+  }
+
+  &__read-more {
+    height: 2rem;
+    font-size: 1.2rem;
+    grid-column: 2/-1;
+    color: $color-primary;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &:hover {
+      cursor: pointer;
+    }
+    @include response(small-phone) {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+  &__tab,
+  &__box,
+  &__wrapper .inner-container {
+    @include response(tablet) {
+      width: 100%;
+    }
+  }
+}

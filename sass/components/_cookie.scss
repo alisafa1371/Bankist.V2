@@ -1,0 +1,18 @@
+.cookie-message {
+  @include flex-row;
+  gap: $large-gap;
+  width: 100%;
+  background-color: white;
+  color: #aaa;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  @include response(small-phone) {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}

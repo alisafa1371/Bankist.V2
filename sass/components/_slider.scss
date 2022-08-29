@@ -1,0 +1,62 @@
+.slider {
+  margin-top: 5rem;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  @include response(tablet) {
+    height: 60rem;
+  }
+  @include response(small-phone) {
+    height: 100rem;
+  }
+
+  &__slide {
+    @include absolute-position;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  &__content {
+    width: 65%;
+    position: relative;
+    align-items: flex-start;
+    &::before {
+      content: "\201C";
+      font-size: 20rem;
+      color: $color-primary;
+      position: absolute;
+      top: -12.7rem;
+      left: -6.8rem;
+      z-index: -1;
+      @include response(small-phone) {
+        font-size: 10rem;
+        top: -7.7rem;
+        left: -3.8rem;
+      }
+    }
+  }
+  blockquote {
+    font-size: 1.8rem;
+  }
+
+  &__author {
+    & img {
+      width: 10rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__user-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &__user-location {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  // slider media queries
+  @include response(small-phone) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
+  </head>
+  <body>
+    <header class="header flex-row">
+        <img src="img/logo.png" alt="logo" class="header__logo" />
+        <nav class="nav">
+          <ul class="nav__list flex-row">
+            <li class="nav__item"><a class="nav__link" href="#features">Feature</a></li>
+            <li class="nav__item"><a class="nav__link" href="#operations">Operations</a></li>
+            <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
+            <li class="nav__item open-account"><a class="nav__link">Open account</a></li>
+          </ul>
+        </nav>
+        <!-- Mobile menu -->
+        <button class="menu-btn">
+          <svg class="menu-btn__close hidden">
+            <use xlink:href="img/icons.svg#icon-x"></use>
+          </svg>
+          <svg class="menu-btn__menu">
+            <use xlink:href="img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="section hero">
+        <div class="container hero__wrapper small-gap auto-fit-grid">
+          <div class="hero__text flex-column small-gap">
+            <h1>
+              When <span class="text-heighlight">banking</span> meets
+              <span class="text-heighlight">minimalist</span>
+            </h1>
+            <h3>A simpler banking experience for a simpler life</h3>
+            <a href="#features">Learn more &downarrow;</a>
+          </div>
+          <div class="hero__img">
+            <img src="img/hero.png" alt="minimalist bank items" />
+          </div>
+        </div>
+      </section>
+      <!-- Features Section -->
+      <section class="section features" id="features">
+        <div class="container features__wrapper large-gap auto-fit-grid">
+          <div class="inner-container features__header">
+            <h4>FEATURES</h4>
+            <h2>Everything you need in a modern bank and more.</h2>
+          </div>
+          <!--Z Pattern First row  -->
+          <img class="features__img lazy-load" src="img/digital-lazy.jpg" alt="computer"
+              data-src="img/op-digital.jpg"
+              data-srcset="
+              img/op-digital600.jpg 600w,
+              img/op-digital1000.jpg 1000w,
+              img/op-digital.jpg 2000w" 
+              data-sizes="(max-width:68.7em) 62vw,2000px">
+          <div class="features__text flex-column small-gap">
+            <div class="features__icon flex-row">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5>100% digital bank</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+          </div>
+          <!--Z Pattern Second row  -->
+          <div class="features__text features__text--2 flex-column">
+            <div class="features__icon flex-row">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-trending-up"></use>
+              </svg>
+            </div>
+            <h5>Watch your money grow</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+          </div>
+          <img class="features__img lazy-load" src="img/grow-lazy.jpg" alt="computer"
+              data-src="img/op-grow.jpg"
+              data-srcset="
+              img/op-grow600.jpg 600w,
+              img/op-grow1000.jpg 1000w,
+              img/op-grow.jpg 2000w" 
+              data-sizes="(max-width:68.7em) 62vw,2000px">
+        <!--Z Pattern Third row  -->
+          <img class="features__img lazy-load" src="img/card-lazy.jpg" alt="computer"
+              data-src="img/op-card.jpg"
+              data-srcset="
+              img/op-card600.jpg 600w,
+              img/op-card1000.jpg 1000w,
+              img/op-card.jpg 2000w" 
+              data-sizes="(max-width:68.7em) 62vw,2000px">
+          <div class="features__text flex-column">
+            <div class="features__icon flex-row">
+              <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <h5>Free debit card included</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Operations Section -->
+      <section class="section operations" id="operations">
+        <div class="container operations__wrapper flex-column">
+          <div class="inner-container operations__header">
+            <h4>OPERATIONS</h4>
+            <h2>Everything as simple as possible, but no simpler.</h2>
+          </div>
+          <!-- Operations Tab -->
+          <div class="operations__tab">
+            <div class="operations__btn-box flex-row">
+              <button class="operations__btn operations__btn--1 operations__btn--active" data-tab="1">
+                <span>01</span>
+                <span>Instant Transfers</span>
+              </button>
+              <button class="operations__btn operations__btn--2" data-tab="2">
+                <span>02</span>
+                <span>Instant loans</span>
+              </button>
+              <button class="operations__btn operations__btn--3" data-tab="3">
+                <span>03</span>
+                <span>Instant Closing</span>
+              </button>
+            </div>
+          </div>
+          <!-- Operation Box -->
+          <div class="inner-container">
+            <div class="operations__box operations__box--1 operations__box--active">
+              <div class="operations__icon flex-row">
+                <svg>
+                <use xlink:href="img/icons.svg#icon-upload"></use>
+                </svg>
+              </div>
+              <h3>Tranfser money to anyone, instantly! No fees, no BS.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <span class="operations__read-more" data-more="1">Read more &downarrow;</span>
+            </div>
+            <div class="operations__box operations__box--2">
+              <div class="operations__icon flex-row">
+                <svg>
+                <use xlink:href="img/icons.svg#icon-home"></use>
+                </svg>
+              </div>
+              <h3>Buy a home or make your dreams come true, with instant loans.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <span class="operations__read-more" data-more="2">Read more &downarrow;</span>
+            </div>
+            <div class="operations__box operations__box--3">
+              <div class="operations__icon flex-row">
+                <svg>
+                <use xlink:href="img/icons.svg#icon-user-x"></use>
+                </svg>
+              </div>
+              <h3>No longer need your account? No problem! Close it instantly.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <span class="operations__read-more" data-more="3">Read more &downarrow;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testiomonails Section -->
+      <section class="section testimonials" id="testimonials">
+        <div class="container testimonials__wrapper flex-column">
+          <div class="inner-container testimonials__header">
+            <h4>NOT SURE YET?</h4>
+            <h2>Millions of Bankists are already making their lifes simpler.</h2>
+          </div>
+          <!-- Slider -->
+          <div class="slider">
+            <div class="slider__slide flex-row">
+              <div class="slider__content flex-column medium-gap">
+                <h3>Best financial decision ever!</h3>
+                <blockquote>Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt exercitationem deleniti.</blockquote>
+                <address class="slider__author flex-row medium-gap">
+                  <img src="img/user-1.jpg" alt="user-1">
+                  <div class="slider__user flex-column">
+                    <span class="testimonial-user-name">Aarav Lynn</span>
+                    <span class="testimonial-user-location">San Francisco, USA</span>
+                  </div>
+                </address>
+              </div>
+            </div>
+            <div class="slider__slide flex-row">
+              <div class="slider__content flex-column medium-gap">
+                <h3>The last step to becoming a complete minimalist</h3>
+                <blockquote>Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt exercitationem deleniti.</blockquote>
+                <address class="slider__author flex-row medium-gap">
+                  <img src="img/user-2.jpg" alt="user-2">
+                  <div class="slider__user flex-column">
+                    <span class="testimonial-user-name">Miyah Miles</span>
+                    <span class="testimonial-user-location">London, UK</span>
+                  </div>
+                </address>
+              </div>
+            </div>
+            <div class="slider__slide flex-row">
+              <div class="slider__content flex-column medium-gap">
+                <h3>Finally free from old-school banks</h3>
+                <blockquote>Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt exercitationem deleniti.</blockquote>
+                <address class="slider__author flex-row medium-gap">
+                  <img src="img/user-3.jpg" alt="user-3">
+                  <div class="slider__user flex-column">
+                    <span class="testimonial-user-name">Francisco Gomes</span>
+                    <span class="testimonial-user-location">Lisbon, Portugal</span>
+                  </div>
+                </address>
+              </div>
+            </div>
+            <button class="slider__btn slider__btn--previous">&leftarrow;</button>
+            <button class="slider__btn slider__btn--next">&rightarrow;</button>
+            <div class="dots flex-row small-gap">
+              <div class="dots__dot" data-slide=0></div>
+              <div class="dots__dot"  data-slide=1></div>
+              <div class="dots__dot" data-slide=2></div>
+            </div>
+          </div>
+      </section>
+      <!-- Sign up Section -->
+      <section class="section sign-up">
+        <div class="container sign-up__wrapper">
+          <h2 class="inner-container sign-up__header">
+            The best day to join Bankist was one year ago. The second best is
+            today!
+          </h2>
+        </div>
+        <button class="sign-up__btn open-account">Open your free account today!</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__nav medium-gap">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Designed by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Jonas Schmedtmann</a
+        >.developed and responsived by 
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://github.com/alisafa1371"
+          >Ali Safaeyan</a>
+      </p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+      <div class="modal__overlay"></div>
+      <div class="modal__message flex-column">
+        <div class="modal__header">
+          <h3>Open your bank account in just  <span class="text-heighlight"> 5 minutes</span></h3>
+        </div>
+        <button class="modal-btn modal-btn__close">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <form class="modal__form flex-column">
+          <div class="modal__row">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" class="modal__input modal__first-name">
+          </div>
+          <div class="modal__row">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" class="modal__input modal__last-name">
+          </div>
+          <div class="modal__row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="modal__input modal__email">
+          </div>
+          <button class="modal-btn modal-btn__submit">
+            Next step &rightarrow;
+          </button>
+        </form>
+        <h2 class="modal__succsess">Account has created</h2>
+      </div>
+    </div>
+  </body>
+</html>

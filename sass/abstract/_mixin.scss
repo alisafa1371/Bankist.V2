@@ -1,0 +1,40 @@
+@mixin absolute-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Queries Manager
+@mixin response($breakpoint) {
+  @if $breakpoint == "laptop" {
+    @media only screen and (max-width: 68.7em) {
+      @content; // 1100px
+    }
+  }
+  @if $breakpoint == "tablet" {
+    @media only screen and (max-width: 54.375em) {
+      @content; // 870px
+    }
+  }
+  @if $breakpoint == "phone" {
+    @media only screen and (max-width: 37.5em) {
+      @content; // 600px
+    }
+  }
+  @if $breakpoint == "small-phone" {
+    @media only screen and (max-width: 28.12em) {
+      @content; // 450px
+    }
+  }
+  @if $breakpoint == "small-height" {
+    @media only screen and (max-height: 33.125em) {
+      @content; // height<530px
+    }
+  }
+}
